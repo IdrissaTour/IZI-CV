@@ -493,6 +493,51 @@ ul {
     gap: 0.5rem;
 }
 
+/* Project Tags */
+.project-tag {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(58, 134, 255, 0.1);
+    color: var(--primary-color);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+/* Design Section */
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.design-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.4s;
+    height: 250px;
+    background: var(--white);
+}
+
+.design-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.design-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.design-card:hover img {
+    transform: scale(1.05);
+}
+
 /* Contact */
 .contact-wrapper {
     display: grid;
