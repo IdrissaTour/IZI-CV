@@ -162,6 +162,19 @@ ul {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     color: #cbd5e1;
+    white-space: pre-wrap;
+    min-height: 2.2rem;
+}
+
+.typewriter {
+    border-right: 2px solid var(--primary-color);
+    padding-right: 4px;
+    animation: blinkCursor 0.8s step-end infinite;
+}
+
+@keyframes blinkCursor {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--primary-color); }
 }
 
 .hero-text p {
@@ -494,6 +507,13 @@ ul {
 }
 
 /* Project Tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
 .project-tag {
     display: inline-block;
     padding: 0.4rem 1rem;
@@ -502,7 +522,6 @@ ul {
     border-radius: 50px;
     font-size: 0.85rem;
     font-weight: 700;
-    margin-top: 0.5rem;
 }
 
 /* Design Section */

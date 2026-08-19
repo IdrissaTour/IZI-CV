@@ -22,20 +22,20 @@ if (menuToggle) {
 // Typewriter Effect
 const typewriterText = document.querySelector('.typewriter');
 if (typewriterText) {
-    const text = typewriterText.innerText;
-    typewriterText.innerText = '';
+    const text = typewriterText.textContent.trim();
+    typewriterText.textContent = '';
     let i = 0;
 
     function type() {
         if (i < text.length) {
-            typewriterText.innerText += text.charAt(i);
+            typewriterText.textContent += text.charAt(i);
             i++;
-            setTimeout(type, 100);
+            setTimeout(type, 70);
         }
     }
     
     // Start after a short delay
-    setTimeout(type, 1000);
+    setTimeout(type, 500);
 }
 
 // Fade-in Animations on Scroll
